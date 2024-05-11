@@ -3,8 +3,12 @@ import customer from './images/customer.jpg'
 import employee from './images/employee.jpg'
 import background from "./images/background.jpg"
 import './Opening.css'
+import { useNavigate } from 'react-router-dom'
 
 function Opening() {
+
+    const navigate=useNavigate();
+
   return (
     <>
         <div className='Opadding' style={{backgroundImage:`url(${background})`,
@@ -17,18 +21,18 @@ function Opening() {
                 <div className='Ocontainer-1'>
                     <div className='Ocontainer-2'>
                         <div className='OCtexts'>
-                            Customer
+                           Customer 
                         </div>
                         <div>
                             <img src={customer} alt='Customer' className='Cimage'/>
                         </div>
                     </div>
                     <div className='Ocontainer-3'>
-                        <div className='OEtexts'>
+                        <div  onClick={()=>navigate('/EAlogin')}  className='OEtexts'>
                                 Employee
                         </div>
                         <div >
-                            <img src={employee} alt='Employee' className='Eimage'/>
+                            <img  onClick={()=>navigate('/EAlogin')} src={employee} alt='Employee' className='Eimage'/>
                         </div>           
                     </div>
                 </div>

@@ -19,14 +19,14 @@ h1{
     text-align: center;
     padding-top: 2%;
     padding-bottom: 0;
-    color:#fff;
+    color:blanchedalmond;
 }
 
 .Ocontainer-1{
     display: flex;
     justify-content: space-between;
     margin-top:0;
-    margin-bottom: 5%;
+    margin-bottom: 8%;
     margin-left: 20%;
     margin-right: 20%;
     border: 1px solid;
@@ -55,7 +55,8 @@ h1{
     font-size: 30px;
     padding-left: 15%;
     margin-bottom: 8%;
-    
+    cursor: pointer;
+
 }
 
 .OEtexts{
@@ -66,11 +67,15 @@ h1{
     margin-left: 2%;
     width:50%;
     height:50%;
+    cursor: pointer;
+
 }
 
 .Eimage{
     margin-left: 1%;
     width:80%;
     height:80%;
+    cursor: pointer;
+
 }
 
