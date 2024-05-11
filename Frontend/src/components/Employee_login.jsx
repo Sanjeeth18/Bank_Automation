@@ -4,9 +4,11 @@ import employee from './images/employee.jpg'
 import background from "./images/background.jpg"
 import branch from './images/bramch.png'
 import './Employee_login.css'
+import { useNavigate } from 'react-router-dom'
 
 function Employee_login() {
 
+    const navigate=useNavigate();
 
   return (
     <>
@@ -23,7 +25,7 @@ function Employee_login() {
                             Customer
                         </div>
                         <div>
-                            <img src={customer} alt='Customer' className='Cimage-1'/>
+                            <img  src={customer} alt='Customer' className='Cimage-1'/>
                         </div>
                     </div>
                     <div className='Econtainer-3'>

@@ -20,11 +20,11 @@ function Opening() {
             <div className='Ocontainer'>
                 <div className='Ocontainer-1'>
                     <div className='Ocontainer-2'>
-                        <div className='OCtexts'>
+                        <div  onClick={()=>navigate('/Clogin')} className='OCtexts'>
                            Customer 
                         </div>
                         <div>
-                            <img src={customer} alt='Customer' className='Cimage'/>
+                            <img onClick={()=>navigate('/Clogin')} src={customer} alt='Customer' className='Cimage'/>
                         </div>
                     </div>
                     <div className='Ocontainer-3'>

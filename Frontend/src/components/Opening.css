@@ -79,3 +79,9 @@ h1{
 
 }
 
+.OCtexts:hover,
+.OEtexts:hover,
+h1:hover{
+    color:tomato;
+    transition: 0.5s;
+}

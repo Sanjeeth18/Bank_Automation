@@ -1,10 +1,10 @@
 import React from 'react'
-import employee from './images/employee.jpg'
+import customer from './images/customer.jpg'
 import background from "./images/background.jpg"
-import './Emp_login.css'
+import './Customer_login.css'
 import { useNavigate } from 'react-router-dom'
 
-function Emp_login() {
+function Customer_login() {
 
     const navigate=useNavigate();
 
@@ -14,19 +14,19 @@ function Emp_login() {
 
   return (
     <>
-        <div className='Empadding' style={{backgroundImage:`url(${background})`,
+        <div className='Cpadding' style={{backgroundImage:`url(${background})`,
                     backgroundSize:'cover',
                     backgroundRepeat:'no-repeat',
                     paddingTop: 0
             }}>
-            <h1><b>Employee/Admin Login</b></h1>
-            <div className='Emcontainer'>
-                <div className='Emcontainer-1'>
-                        <img onClick={()=>navigate('/EAlogin')} src={employee} alt='Employee' className='Emimage'/>
+            <h1><b>Customer Login</b></h1>
+            <div className='Ccontainer'>
+                <div className='Ccontainer-1'>
+                        <img onClick={()=>navigate('/EMlogin')} src={customer} alt='Customer' className='Cuimage'/>
                         <form onSubmit={()=>change()}>
                             <div >
                                 <h1>Login</h1>
-                                <label>Employee ID</label><br></br>
+                                <label>Customer ID</label><br></br>
                                 <input type='text'/><br></br>
                                 <label>Password </label><br></br>
                                 <input type='password'/>
@@ -40,4 +40,4 @@ function Emp_login() {
   )
 }
 
-export default Emp_login
+export default Customer_login
