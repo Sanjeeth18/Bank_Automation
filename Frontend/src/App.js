@@ -1,10 +1,13 @@
 import './App.css'
-import React from 'react';
+import React from 'react'
 import {BrowserRouter as Router,Routes,Route}  from 'react-router-dom'
-import Opening from "./components/Opening";
-import Employee_login from './components/Employee_login'
-import Emp_login from './components/Emp_login'
-import Customer_login from './components/Customer_login'
+import Opening from "./pages/Opening";
+import Employee_login from './pages/Employee_login'
+import Emp_login from './pages/Emp_login'
+import Customer_login from './pages/Customer_login'
+import Customer from './pages/Customer';
+import Transaction from './pages/Transaction';
+import Maketransaction from './pages/Maketransaction';
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
           <Route path='/EMlogin' element={<Employee_login/>}/>
           <Route path='/EAlogin' element={<Emp_login/>}/>
           <Route path='/Clogin' element={<Customer_login/>}/>
+          <Route path='/Cus_page' element={<Customer/>}/>
+          <Route path='/Transaction' element={<Transaction/>}/>
+          <Route path='/Make' element={<Maketransaction/>}/>
         </Routes>
       </Router>
     </>

@@ -9,7 +9,7 @@ function Customer_login() {
     const navigate=useNavigate();
 
     const change=()=>{
-        navigate('/EMlogin');
+        navigate('/Cus_page');
     }
 
   return (
@@ -22,7 +22,7 @@ function Customer_login() {
             <h1><b>Customer Login</b></h1>
             <div className='Ccontainer'>
                 <div className='Ccontainer-1'>
-                        <img onClick={()=>navigate('/EMlogin')} src={customer} alt='Customer' className='Cuimage'/>
+                        <img onClick={()=>navigate('/Clogin')} src={customer} alt='Customer' className='Cuimage'/>
                         <form onSubmit={()=>change()}>
                             <div >
                                 <h1>Login</h1>
@@ -30,7 +30,7 @@ function Customer_login() {
                                 <input type='text'/><br></br>
                                 <label>Password </label><br></br>
                                 <input type='password'/>
-                                <input type='submit'/>
+                                <input type='submit' value='Submit'/>
                             </div>
                         </form>
                 </div>

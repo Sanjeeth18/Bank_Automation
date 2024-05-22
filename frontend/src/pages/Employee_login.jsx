@@ -8,8 +8,6 @@ import { useNavigate } from 'react-router-dom'
 
 function Employee_login() {
 
-    const navigate=useNavigate();
-
   return (
     <>
         <div className='Epadding' style={{backgroundImage:`url(${background})`,
