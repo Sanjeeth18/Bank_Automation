@@ -1,0 +1,113 @@
+.BCOcontainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.BCOheading{
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom:0;
+    text-align: center;
+    color:#000;
+}
+
+.BCOcontainer-1{
+    display: flex;
+    justify-content:center;
+    margin-top:0;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid;
+    width:100vw;
+    height:80%;
+    background-color:blanchedalmond;
+    border-radius: 1%;
+    
+}
+
+.BCOcontainer-2 {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+    overflow: scroll;
+}
+
+.BCOcontainer-2::-webkit-scrollbar{
+    display: none;
+}
+
+.BCOheading:hover{
+    color:tomato;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.BCOProfile{
+    text-align: center;
+    margin-top: 2%;
+    border: 1px solid black;
+    width:150px;    
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(89, 255, 89);
+    margin-bottom: 3%;
+    position: absolute;
+}
+
+.BCOicon{
+    width: 150px;
+    height: 120px;
+    margin-top: 10%;
+    position: sticky;
+}
+
+.BCOcontent{
+    width: 100%;
+    height:fit-content;
+    overflow: scroll;
+    margin-top: 15%;
+}
+
+.BCOcontent::-webkit-scrollbar{
+    display: none;
+}
+
+.BCOcontent div{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.BCOcontent .count{
+    font-size: 20px;
+    margin-bottom:3%
+}
+
+.BCObuttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-1{
+    margin-bottom: 5%;  
+    width:130px;
+    height:50px;
+    background-color: lightgreen;
+    font-size: 15px;
+}
+
+.btn-2{
+    margin-bottom: 5%;
+    width:130px;
+    height:50px;
+    background-color: lightgray;
+    font-size: 15px;
+}

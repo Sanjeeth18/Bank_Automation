@@ -39,6 +39,7 @@ function Maketransaction() {
                                     
                                 </div>
                                 {select !=0 && (
+                                    <>
                                         <div className='Rselected'>
                                             <div className='texts'>
                                                 <label >
@@ -48,8 +49,30 @@ function Maketransaction() {
                                             <div>
                                                 <input type='number'></input>
                                             </div>
-
                                         </div>
+                                        <div className='divtable'>
+                                            <table>
+                                                <tr>
+                                                    <td className='MTfirst'>Account Number</td>
+                                                    <td className='MTsecond'></td>
+                                                </tr>
+                                                <tr>
+                                                    <td className='MTfirst'>IFSC Code</td>
+                                                    <td className='MTsecond'></td>
+                                                </tr>
+                                                <tr>
+                                                    <td className='MTfirst'>Customer Name</td>
+                                                    <td className='MTsecond'></td>
+                                                </tr>
+                                                
+                                                <tr>
+                                                    <td className='Bfirst'>Phone</td>
+                                                    <td className='Bsecond'></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                        
+                                    </>
                                 )}
                             </div>
                             <div className='MTbuttons'>
@@ -57,10 +80,10 @@ function Maketransaction() {
                                     <Button onClick={() => navigate('/Transaction')} className='btn-1'>Back</Button>
                                 </div>
                                 <div>
-                                    <Button onClick={() => {}} className='btn-2'>Add Beneficiary</Button>
+                                    <Button onClick={() => navigate('/Beneficiary')} className='btn-1'>Add Beneficiary</Button>
                                 </div>
                                 <div>
-                                    <Button onClick={() => {}} className='btn-2'>Confirm</Button>
+                                    <Button onClick={() => navigate('/TConfirm')} className='btn-2'>Confirm</Button>
                                 </div>
                             </div>
                         </div>

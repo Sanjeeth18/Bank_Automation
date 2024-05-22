@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons'; 
-import Button from 'react-bootstrap/Button'; // Import Button component from react-bootstrap
+import Button from 'react-bootstrap/Button'; 
 import './Transaction.css';
 
 function Transaction({Transactions}) {
@@ -47,7 +47,10 @@ function Transaction({Transactions}) {
                                     <Button onClick={()=>navigate('/Cus_page')} className='btn-1' variant='primary'>Back</Button> 
                                 </div>
                                 <div >
-                                    <Button onClick={()=>navigate('/Make')} className='btn-2'>Make Transaction</Button> 
+                                    <Button onClick={()=>navigate('/Make')} className='btn-1'>Make Transaction</Button> 
+                                </div>
+                                <div>
+                                    <Button onClick={() => navigate('/Beneficiary')} className='btn-1'>Add Beneficiary</Button>
                                 </div>
                                 <div >
                                     <Button  onClick={()=>navigate('/Clogin')}  className='btn-3' variant='primary'>Log Out</Button> 

@@ -2,12 +2,15 @@ import './App.css'
 import React from 'react'
 import {BrowserRouter as Router,Routes,Route}  from 'react-router-dom'
 import Opening from "./pages/Opening";
-import Employee_login from './pages/Employee_login'
-import Emp_login from './pages/Emp_login'
-import Customer_login from './pages/Customer_login'
-import Customer from './pages/Customer';
-import Transaction from './pages/Transaction';
-import Maketransaction from './pages/Maketransaction';
+import Employee_login from './pages/Employee/Employee_login'
+import Emp_login from './pages/Employee/Emp_login'
+import Customer_login from './pages/customer/Customer_login'
+import Customer from './pages/customer/Customer';
+import Transaction from './pages/customer/Transaction';
+import Maketransaction from './pages/customer/Maketransaction';
+import Beneficiary from './pages/customer/Beneficiary';
+import Transaction_Confirm from './pages/customer/Transaction_Confirm';
+import Beneficiary_Confirm from './pages/customer/Beneficiary_confirm';
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
           <Route path='/Cus_page' element={<Customer/>}/>
           <Route path='/Transaction' element={<Transaction/>}/>
           <Route path='/Make' element={<Maketransaction/>}/>
+          <Route path='/Beneficiary' element={<Beneficiary/>}/>
+          <Route path='/TConfirm' element={<Transaction_Confirm/>}/>
+          <Route path='/BConfirm' element={<Beneficiary_Confirm/>}/>
         </Routes>
       </Router>
     </>

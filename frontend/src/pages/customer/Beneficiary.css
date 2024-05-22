@@ -1,4 +1,4 @@
-.MTcontainer{
+.Bcontainer{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -6,7 +6,7 @@
 }
 
 
-.MTheading{
+.Bheading{
     font-family: "Sedan SC", serif;
     font-weight: 400;
     font-style: normal;
@@ -17,7 +17,7 @@
     color:#000;
 }
 
-.MTcontainer-1{
+.Bcontainer-1{
     display: flex;
     justify-content:center;
     margin-top:0;
@@ -32,7 +32,7 @@
     
 }
 
-.MTcontainer-2 {
+.Bcontainer-2 {
     display: flex; 
     flex-direction: column;
     align-items: center;
@@ -41,81 +41,79 @@
     overflow: scroll;
 }
 
-.MTcontainer-2::-webkit-scrollbar{
+.Bcontainer-2::-webkit-scrollbar{
     display: none;
 }
 
-.MTheading:hover{
+.Bheading:hover{
     color:tomato;
     transition: 0.5s;
     cursor: pointer;
 
 }
 
-.MTcontent{
+.Bcontent{
     width: 90%;
-    height:fit-content;
+    height:80%;
     overflow: scroll;
     margin-top: 5%;
     border:1px solid
 }
 
-.MTcontent::-webkit-scrollbar{
+.Bcontent::-webkit-scrollbar{
     display: none;
 }
 
-.MTcontent h2{
+.Bcontent h2{
     margin-left: 2%;;
 }
 
-.MTcontent .TO{
-    display: flex;
-    justify-content: flex-start;
+.Bcontent table{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border: 1px solid;
+    width: 90%;
+    height: fit-content;
+    margin-left: 5%;
+    border-collapse: collapse;
+    margin-right: 5%;
 }
 
-.MTcontent .select{
-    width: fit-content;
-    height: 40px;
-    margin-left: 1%;
-    margin-top: 1%;
-    padding-left: 4px;
-    padding-right: 4px;
+tr,td{
+    border: 1px solid;
 }
 
-.MTbuttons{
+.Bcontent table input{
+    border: none;
+    background-color: transparent;
+    height: fit-content;
+    width: 95%;
+    font-size: 20px;
+}
+
+table input:focus{
+    outline: none;
+    border:none;
+    box-shadow: none;
+}
+
+.Bfirst{
+    font-size: 20px;
+    text-align: center;
+    width:30%;
+    height:70%;
+    padding: 2%;
+}
+
+.Bsecond{
+    font-size: 20px;
+    text-align: center;
+}
+
+.Bbuttons{
     display: flex;
     justify-content: space-evenly;
 }
-
-.Rselected{
-    display:flex;
-    justify-content: flex-start;
-}
-
-.Rselected .texts{
-    font-family: "Sedan SC", serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-left:10%;
-    padding-right: 1%;
-    padding-bottom: 5%;
-    color:#000;
-    font-size: 20px;
-
-}
-
-.Rselected div{
-    margin-top:2%;
-}
-
-.Rselected div input{
-    width:150px;
-    height:30px;
-    font-size: 15px;
-    margin-left: 3%;
-}
-
-
 
 .btn-1,
 .btn-3{

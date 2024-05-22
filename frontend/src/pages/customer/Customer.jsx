@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons'; 
-import Button from 'react-bootstrap/Button'; // Import Button component from react-bootstrap
+import Button from 'react-bootstrap/Button'; 
 import './Customer.css';
 
 function Customer() {
@@ -52,13 +52,16 @@ function Customer() {
                             </table>
                             <div className='buttons'>
                                 <div >
-                                    <Button  onClick={()=>navigate('/Transaction')}  className='btn-1' variant='primary'>Transaction</Button> 
+                                    <Button  onClick={()=>navigate('/Transaction')}  className='btn-1' >Transaction</Button> 
                                 </div>
                                 <div >
-                                    <Button onClick={()=>navigate('/Make')} className='btn-2'>Make Transaction</Button> 
+                                    <Button onClick={()=>navigate('/Make')} className='btn-1'>Make Transaction</Button> 
+                                </div>
+                                <div>
+                                    <Button onClick={() => navigate('/Beneficiary')} className='btn-1'>Add Beneficiary</Button>
                                 </div>
                                 <div >
-                                    <Button  onClick={()=>navigate('/Clogin')}  className='btn-2' variant='primary'>Log Out</Button> 
+                                    <Button  onClick={()=>navigate('/Clogin')}  className='btn-2'>Log Out</Button> 
                                 </div>
                             </div>
                         </div>

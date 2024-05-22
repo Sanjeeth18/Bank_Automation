@@ -1,0 +1,166 @@
+.MTcontainer{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.MTheading{
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom:0;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 1%;
+    color:#000;
+}
+
+.MTcontainer-1{
+    display: flex;
+    justify-content:center;
+    margin-top:0;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 1px solid;
+    width:100vw;
+    height:90vh;
+    background-color:blanchedalmond;
+    border-radius: 1%;
+    
+}
+
+.MTcontainer-2 {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+.MTcontainer-2::-webkit-scrollbar{
+    display: none;
+}
+
+.MTheading:hover{
+    color:tomato;
+    transition: 0.5s;
+    cursor: pointer;
+
+}
+
+.MTcontent{
+    width: 90%;
+    height:90%;
+    overflow: scroll;
+    margin-top: 3%;
+    border:1px solid
+}
+
+.MTcontent::-webkit-scrollbar{
+    display: none;
+}
+
+.MTcontent h2{
+    margin-left: 2%;;
+}
+
+.MTcontent .TO{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2%;
+}
+
+.MTcontent .select{
+    width: fit-content;
+    height: 40px;
+    margin-left: 1%;
+    margin-top: 1%;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.MTbuttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Rselected{
+    display:flex;
+    justify-content: flex-start;
+}
+
+.Rselected .texts{
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left:10%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    color:#000;
+    font-size: 20px;
+
+}
+
+.Rselected div{
+    margin-top:2%;
+}
+
+.Rselected div input{
+    width:150px;
+    height:30px;
+    font-size: 15px;
+    margin-left: 3%;
+}
+
+.divtable table{
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border: 1px solid;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    border-collapse: collapse;
+    margin-right: 5%;
+}
+
+tr,td{
+    border: 1px solid;
+}
+
+.MTfirst{
+    font-size: 20px;
+    text-align: center;
+    width:30%;
+    padding: 2%;
+}
+
+.MTsecond{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.btn-1,
+.btn-3{
+    margin-bottom: 5%;  
+    width:130px;
+    height:50px;
+    background-color: lightgreen;
+    font-size: 15px;
+}
+
+.btn-2{
+    margin-bottom: 5%;  
+    width:150px;
+    height:50px;
+    background-color: lightgreen;
+    font-size: 15px;
+}
+
+.btn-3{
+    background-color: lightgray;
+}

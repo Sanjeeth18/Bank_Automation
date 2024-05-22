@@ -1,6 +1,6 @@
 import React from 'react'
-import employee from './images/employee.jpg'
-import background from "./images/background.jpg"
+import employee from '../images/employee.jpg'
+import background from "../images/background.jpg"
 import './Emp_login.css'
 import { useNavigate } from 'react-router-dom'
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import customer from './images/customer.jpg'
-import background from "./images/background.jpg"
+import customer from '../images/customer.jpg'
+import background from "../images/background.jpg"
 import './Customer_login.css'
 import { useNavigate } from 'react-router-dom'
 

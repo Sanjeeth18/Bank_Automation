@@ -1,8 +1,8 @@
 import React from 'react'
-import customer from './images/customer.jpg'
-import employee from './images/employee.jpg'
-import background from "./images/background.jpg"
-import branch from './images/bramch.png'
+import customer from '../images/customer.jpg'
+import employee from '../images/employee.jpg'
+import background from "../images/background.jpg"
+import branch from '../images/bramch.png'
 import './Employee_login.css'
 import { useNavigate } from 'react-router-dom'
 
