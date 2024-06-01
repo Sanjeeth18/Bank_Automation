@@ -7,13 +7,7 @@ import './Customer.css';
 
 function Customer() {
     const navigate = useNavigate();
-    const parameter={
-        date:'16-07-2004',
-        to:'Sanjeeth',
-        amount:'10000',
-        receiver:'Daksha',
-        balance:'100'
-    };
+
     return (
         <>
             <h1 className='Cuheading'><b>Customer Login</b></h1>

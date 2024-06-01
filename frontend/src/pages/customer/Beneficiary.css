@@ -79,7 +79,7 @@
     margin-right: 5%;
 }
 
-tr,td{
+.Bcontent tr,td{
     border: 1px solid;
 }
 
@@ -91,7 +91,7 @@ tr,td{
     font-size: 20px;
 }
 
-table input:focus{
+.Bcontent table input:focus{
     outline: none;
     border:none;
     box-shadow: none;
