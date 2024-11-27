@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState } from 'react';
 const AdminEmpContext = createContext();
 
 export const AdminEmpProvider = ({ children }) => {
-    const [admin_emp, setAdminEmp] = useState(1);
+    const [admin_emp, setAdminEmp] = useState(0);
 
     return (
         <AdminEmpContext.Provider value={{ admin_emp, setAdminEmp }}>

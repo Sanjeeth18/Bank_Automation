@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import "./Add_branch.css";
+import Button from "../../component/Button";
 
 function Add_Branch() {
   const navigate = useNavigate();
@@ -38,19 +38,28 @@ function Add_Branch() {
               <div className="buttons">
                 <div>
                   <Button
-                    onClick={() => navigate("/EALogin")}
-                    className="btn-1"
-                  >
-                    Back
-                  </Button>
+                    onClick={() => navigate("/EAlogin")}
+                    id="back"
+                    customstyle={{
+                      width: "130px",
+                      height: "50px",
+                      fontSize: "15px",
+                      backgroundColor: "lightgreen",
+                    }}
+                    value="Back"
+                  />
                 </div>
                 <div>
                   <Button
                     onClick={() => navigate("/Confirm")}
-                    className="btn-1"
-                  >
-                    Confirm
-                  </Button>
+                    customstyle={{
+                      width: "130px",
+                      height: "50px",
+                      fontSize: "15px",
+                      backgroundColor: "lightgreen",
+                    }}
+                    value="Confirm"
+                  />
                 </div>
               </div>
             </div>

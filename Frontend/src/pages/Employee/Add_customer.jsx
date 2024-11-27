@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Button from "react-bootstrap/Button";
 import "./Add_customer.css";
+import Button from "../../component/Button";
 
 function Add_Customer() {
   const navigate = useNavigate();
@@ -62,19 +62,27 @@ function Add_Customer() {
               <div className="buttons">
                 <div>
                   <Button
+                    customstyle={{
+                      width: "130px",
+                      height: "50px",
+                      fontSize: "15px",
+                      backgroundColor: "lightgreen",
+                    }}
+                    value="Back"
                     onClick={() => navigate("/EALogin")}
-                    className="btn-1"
-                  >
-                    Back
-                  </Button>
+                  />
                 </div>
                 <div>
                   <Button
+                    customstyle={{
+                      width: "130px",
+                      height: "50px",
+                      fontSize: "15px",
+                      backgroundColor: "lightgreen",
+                    }}
+                    value="Confirm"
                     onClick={() => navigate("/Confirm")}
-                    className="btn-1"
-                  >
-                    Confirm
-                  </Button>
+                  />
                 </div>
               </div>
             </div>

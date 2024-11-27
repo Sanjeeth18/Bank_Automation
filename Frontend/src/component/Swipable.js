@@ -6,14 +6,14 @@ const SwipeableComponent = ({ children, targetPage, previousPage }) => {
   const navigate = useNavigate();
 
   const handlers = useSwipeable({
-    onSwipedLeft: () => navigate(previousPage),  
-    onSwipedRight: () => navigate(targetPage),
+    onSwipedLeft: () => previousPage && navigate(previousPage),
+    onSwipedRight: () => targetPage && navigate(targetPage),
     preventDefaultTouchmoveEvent: true,
-    trackMouse: true
+    trackMouse: true,
   });
 
   return (
-    <div {...handlers}>
+    <div {...handlers} style={{ height: '100vh', overflow: 'hidden' }}>
       {children}
     </div>
   );

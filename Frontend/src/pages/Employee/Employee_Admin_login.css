@@ -60,7 +60,6 @@ h1{
     margin-top:3%;
     height: 70%;
     width:60%;
-    border:1px solid;
     
 }
 
@@ -150,6 +149,8 @@ h1{
 }
 
 .EBtexts:hover,
+.EECtexts:hover,
+.EEEtexts:hover,
 .ECtexts:hover,
 .EEtexts:hover,
 h1:hover{
